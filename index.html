@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Bahaa | DevOps Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        borderCol: '#1f2937',
+                        terminalGreen: '#10b981',
+                        neonBlue: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 selection:bg-terminalGreen selection:text-black">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-terminalGreen font-mono font-bold text-lg">&gt;</span>
+                <a href="#" class="font-mono font-bold text-xl tracking-tight text-white">ahmed<span class="text-terminalGreen">.bahaa</span>()</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="#about" class="text-gray-400 hover:text-terminalGreen transition-colors">About</a>
+                <a href="#services" class="text-gray-400 hover:text-terminalGreen transition-colors">Services</a>
+                <a href="#skills" class="text-gray-400 hover:text-terminalGreen transition-colors">Skills</a>
+                <a href="#experience" class="text-gray-400 hover:text-terminalGreen transition-colors">Experience</a>
+                <a href="#projects" class="text-gray-400 hover:text-terminalGreen transition-colors">Projects</a>
+                <a href="#contact" class="text-gray-400 hover:text-terminalGreen transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/ahmed-bahaa-mazen-196364219" target="_blank" class="text-gray-400 hover:text-terminalGreen text-lg transition-colors">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ahmed-Mazen" target="_blank" class="text-gray-400 hover:text-terminalGreen text-lg transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="relative overflow-hidden py-20 lg:py-32 border-b border-borderCol">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terminalGreen/10 border border-terminalGreen/30 text-terminalGreen text-xs font-mono">
+                        <span class="w-2 h-2 rounded-full bg-terminalGreen animate-pulse"></span>
+                        <span>Available for DevOps Opportunities</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
+                        Hi, I'm <span class="text-terminalGreen">Ahmed Bahaa</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-mono text-neonBlue">
+                        // DevOps Engineer
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        Aspiring DevOps Engineer with a strong foundation in Linux systems, cloud computing, and automation. Skilled in containerization, CI/CD pipelines, networking fundamentals, and scripting to streamline development and deployment workflows. Passionate about building scalable, reliable systems and continuously improving operational efficiency.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="mailto:ahmedbahaamazen@gmail.com" class="inline-flex items-center space-x-2 px-6 py-3 rounded-lg bg-terminalGreen text-black font-semibold hover:bg-emerald-400 transition-all shadow-lg shadow-terminalGreen/20">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact Me</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-bahaa-mazen-196364219" target="_blank" class="inline-flex items-center space-x-2 px-6 py-3 rounded-lg bg-cardBorder border border-borderCol bg-gray-900 text-white font-semibold hover:border-terminalGreen transition-all">
+                            <i class="fa-brands fa-linkedin text-neonBlue"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                    <div class="pt-4 flex items-center space-x-6 text-sm text-gray-400 font-mono">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-location-dot text-terminalGreen"></i>
+                            <span>6th Of October, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl p-2 bg-gradient-to-b from-terminalGreen/40 to-neonBlue/40 shadow-2xl">
+                        <div class="w-full h-full bg-cardBg rounded-xl overflow-hidden flex flex-col items-center justify-center relative border border-borderCol">
+                            <div class="absolute inset-0 bg-darkBg flex flex-col items-center justify-center text-center p-6">
+                                <i class="fa-solid fa-user-astronaut text-6xl text-terminalGreen mb-4 animate-bounce"></i>
+                                <span class="font-mono text-sm text-gray-300 font-semibold">[Your Photo Here]</span>
+                                <span class="text-xs text-gray-500 mt-1">Ahmed Bahaa Avatar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-darkBg border-b border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">What I Can Offer</h2>
+                <p class="mt-4 text-gray-400">Core capabilities and technical services tailored to modern software infrastructure.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-cardBg border border-borderCol rounded-xl p-6 transition-all glow-effect flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-terminalGreen/10 flex items-center justify-center text-terminalGreen mb-6 text-xl">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Shell Scripts</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Crafting robust Bash scripts for task automation, routine system maintenance, and streamlining development/deployment workflows.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-borderCol/50 font-mono text-xs text-terminalGreen flex items-center space-x-1">
+                        <span>automation.sh</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol rounded-xl p-6 transition-all glow-effect flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue mb-6 text-xl">
+                            <i class="fa-solid fa-dharmachakra"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Kubernetes Deployments</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Designing, orchestrating, and scaling containerized applications securely across cluster environments.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-borderCol/50 font-mono text-xs text-neonBlue flex items-center space-x-1">
+                        <span>k8s-cluster.yml</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol rounded-xl p-6 transition-all glow-effect flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-terminalGreen/10 flex items-center justify-center text-terminalGreen mb-6 text-xl">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Ansible Playbooks</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Writing efficient automation playbooks for configuration management, infrastructure provisioning, and repeatable deployments.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-borderCol/50 font-mono text-xs text-terminalGreen flex items-center space-x-1">
+                        <span>playbook.yaml</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol rounded-xl p-6 transition-all glow-effect flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue mb-6 text-xl">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Containerization & CI/CD</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Building Docker images, setting up Docker Compose environments, and configuring GitHub Actions automation pipelines.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-borderCol/50 font-mono text-xs text-neonBlue flex items-center space-x-1">
+                        <span>pipeline.yml</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-darkBg border-b border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Technical Stack</h2>
+                <p class="mt-4 text-gray-400">Tools and technologies I use to architect reliable infrastructures.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cardBg border border-borderCol p-6 rounded-xl">
+                    <h3 class="text-sm font-mono text-terminalGreen mb-4">// PROGRAMMING</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">C</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">C++</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Python</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol p-6 rounded-xl">
+                    <h3 class="text-sm font-mono text-terminalGreen mb-4">// LINUX & SHELL SCRIPTING</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Bash scripting</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Automation</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">System operations</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol p-6 rounded-xl">
+                    <h3 class="text-sm font-mono text-terminalGreen mb-4">// DOCKER</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Images</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Containers</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Dockerfiles</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Docker Compose</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol p-6 rounded-xl">
+                    <h3 class="text-sm font-mono text-terminalGreen mb-4">// CLOUD COMPUTING</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">AWS</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Oracle Cloud</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol p-6 rounded-xl">
+                    <h3 class="text-sm font-mono text-terminalGreen mb-4">// CI/CD & VERSION CONTROL</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">GitHub Actions</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Git & GitHub workflows</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg border border-borderCol p-6 rounded-xl">
+                    <h3 class="text-sm font-mono text-terminalGreen mb-4">// NETWORKING</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">TCP/IP</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">DNS</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">HTTP/HTTPS</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Ports</span>
+                        <span class="px-3 py-1.5 rounded-full bg-gray-900 border border-borderCol text-gray-300 text-sm font-mono">Routing fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-darkBg border-b border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="w-10 h-10 rounded-lg bg-terminalGreen/10 flex items-center justify-center text-terminalGreen">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Experience</h2>
+                    </div>
+                    <div class="border-l border-borderCol pl-6 space-y-10 relative">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-terminalGreen border-4 border-darkBg"></div>
+                            <span class="text-xs font-mono text-terminalGreen bg-terminalGreen/10 px-2.5 py-1 rounded-md border border-terminalGreen/20">11/2024 – Present</span>
+                            <h3 class="text-lg font-bold text-white mt-2">Vice Head of Embedded Systems committee</h3>
+                            <p class="text-sm font-mono text-neonBlue mt-0.5">IEEE MUST SB</p>
+                            <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                                As the vice of embedded systems, I teach members about embedded systems such as Standard C language to Embedded C, Microprocessors like ATMega32, and Robotics in general (Sensors, Circuits, etc).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Education</h2>
+                    </div>
+                    <div class="border-l border-borderCol pl-6 space-y-10 relative">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-neonBlue border-4 border-darkBg"></div>
+                            <span class="text-xs font-mono text-neonBlue bg-neonBlue/10 px-2.5 py-1 rounded-md border border-neonBlue/20">2022 – Present</span>
+                            <h3 class="text-lg font-bold text-white mt-2">Computer and Software Engineering</h3>
+                            <p class="text-sm font-mono text-gray-300 mt-0.5">Misr University for Science and Technology</p>
+                            <div class="mt-3 inline-flex items-center space-x-2 bg-gray-900 border border-borderCol px-3 py-1 rounded-lg text-sm">
+                                <span class="text-gray-400 font-mono">GPA:</span>
+                                <span class="text-terminalGreen font-bold font-mono">3.55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-darkBg border-b border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Featured Projects</h2>
+                <p class="mt-4 text-gray-400">Practical applications spanning systems engineering, hardware integration, and software development.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-cardBg border border-borderCol rounded-xl p-8 flex flex-col justify-between transition-all glow-effect">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-terminalGreen/10 flex items-center justify-center text-terminalGreen">
+                                <i class="fa-solid fa-solar-panel"></i>
+                            </div>
+                            <span class="text-xs font-mono px-3 py-1 rounded-full bg-gray-900 border border-borderCol text-gray-300">Hardware & IoT</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Water Pump system with solar energy</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Built a water pump system using Arduino Uno, powered by a sun-tracking solar panel. Responsible for the sun tracking mechanism using two servo motors (x-axis and y-axis) and 4 LDR sensors in a plus shape. Developed an algorithm to detect light intensity and adjust movement. Overcame hardware inconsistencies by using calibration equations to ensure accurate sensor readings.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-borderCol flex flex-wrap gap-2 text-xs font-mono text-terminalGreen">
+                        <span class="px-2 py-1 bg-darkBg rounded">Arduino Uno</span>
+                        <span class="px-2 py-1 bg-darkBg rounded">Servo Motors</span>
+                        <span class="px-2 py-1 bg-darkBg rounded">LDR Sensors</span>
+                        <span class="px-2 py-1 bg-darkBg rounded">Algorithms</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardBg border border-borderCol rounded-xl p-8 flex flex-col justify-between transition-all glow-effect">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </div>
+                            <span class="text-xs font-mono px-3 py-1 rounded-full bg-gray-900 border border-borderCol text-gray-300">IoT & Web APIs</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Weather Station</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Created a weather station to detect indoor and outdoor temperatures. Utilized an ESP32 and DHT11 for indoor metrics, and integrated the OpenWeather API for outdoor data. Included an LCD Screen for physical readings and a built-in ESP32 web server to access data remotely via IP address.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="pt-4 border-t border-borderCol flex flex-wrap gap-2 text-xs font-mono text-neonBlue mb-6">
+                            <span class="px-2 py-1 bg-darkBg rounded">ESP32</span>
+                            <span class="px-2 py-1 bg-darkBg rounded">DHT11</span>
+                            <span class="px-2 py-1 bg-darkBg rounded">OpenWeather API</span>
+                            <span class="px-2 py-1 bg-darkBg rounded">Web Server</span>
+                        </div>
+                        <a href="https://github.com/Ahmed-Mazen/WeatherStation" target="_blank" class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-900 border border-borderCol text-white text-sm font-semibold hover:border-neonBlue transition-all">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View Repository</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-darkBg py-16 border-t border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-borderCol">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-terminalGreen font-mono font-bold text-lg">&gt;</span>
+                        <span class="font-mono font-bold text-lg text-white">ahmed<span class="text-terminalGreen">.bahaa</span>()</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        DevOps Engineer & Software Engineering student committed to automated infrastructure and reliable deployment scaling.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-mono text-terminalGreen mb-4">// DIRECT CONTACT</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-neonBlue"></i>
+                            <span class="font-mono">01004478854</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-terminalGreen"></i>
+                            <a href="mailto:ahmedbahaamazen@gmail.com" class="hover:underline font-mono text-gray-300">ahmedbahaamazen@gmail.com</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-language text-gray-400"></i>
+                            <span>Arabic (Native), English (Professional)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-mono text-terminalGreen mb-4">// SOCIAL PROFILES</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/ahmed-bahaa-mazen-196364219" target="_blank" class="w-10 h-10 rounded-lg bg-gray-900 border border-borderCol flex items-center justify-center text-gray-300 hover:text-terminalGreen hover:border-terminalGreen transition-all">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Ahmed-Mazen" target="_blank" class="w-10 h-10 rounded-lg bg-gray-900 border border-borderCol flex items-center justify-center text-gray-300 hover:text-terminalGreen hover:border-terminalGreen transition-all">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-mono">
+                <p>&copy; 2026 Ahmed Bahaa. All rights reserved.</p>
+                <p class="mt-4 sm:mt-0 text-terminalGreen">// System Status: Operational</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
